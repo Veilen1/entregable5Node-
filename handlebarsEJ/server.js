@@ -6,7 +6,7 @@ const { engine } = require('express-handlebars');
 
 //  Middleware
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }));
 app.use("/api/products", routerProducts)
 app.use(express.static("./src/public"))
 
