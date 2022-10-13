@@ -16,7 +16,7 @@ class ApiProd {
         const product = req.body
         product.id = this.products.length + 1
         this.products.push(product)
-        res.send(product)
+        res.redirect("products")
     }
 
     getProductById = (req, res) => {
